@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--Family);
 }
 
 /* Custom Properties */
@@ -32,6 +33,40 @@
     --fw-400: 400;
     --fw-500: 500;
     --fw-700: 700;
+
+    /* Utilities */
+    --Top-gap: 2em;
+}
+body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+        url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    min-height: 100vh;
+}
+
+/* Container */
+.container{
+    width: 70%;
+    margin: 5em auto;
+    max-width: 1100px;
+}
+
+/* Top */
+.app__top{
+    display: flex;
+    gap: var(--Top-gap);
+}
+.app__top > *{
+    flex: 1;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
 }
 
 /* Footer */
