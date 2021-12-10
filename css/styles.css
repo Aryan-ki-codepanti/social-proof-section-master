@@ -45,14 +45,16 @@ body {
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     min-height: 100vh;
-    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Container */
 .container {
     width: 70%;
     margin-inline: auto;
-    margin-top: 10em;
     max-width: 1300px;
 }
 
