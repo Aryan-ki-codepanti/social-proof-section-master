@@ -206,6 +206,9 @@ footer {
 /* Mobile Design */
 
 @media screen and (max-width: 468px) {
+    .container{
+        margin-top: 5em;
+    }
     body {
         background-image: url(../images/bg-pattern-top-mobile.svg),
             url(../images/bg-pattern-bottom-mobile.svg);
